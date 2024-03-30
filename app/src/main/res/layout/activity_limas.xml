@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#c5f3fa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bangun_ruang.limas">
+
+    <TextView
+        android:id="@+id/limas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Luas Kerucut"
+        android:textColor="@color/biru_tua"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rumus"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rumus_limas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/limas" />
+
+    <TextView
+        android:id="@+id/hitung"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Hitung"
+        android:textAlignment="center"
+        android:textColor="@color/biru_tua"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rumus" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="400dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitung" />
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="masukkan alasnya"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasil" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="masukkan tingginya"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alas"  />
+
+    <EditText
+        android:id="@+id/sisi_tegak"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="masukkan sisi tegaknya"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi"  />
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:layout_width="197dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/biru_aqua"
+        android:textColor="@color/biru_tua"
+        android:text="Hasil"
+        android:textSize="20dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sisi_tegak" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
